@@ -1,0 +1,15 @@
+<launch>
+  <!-- Argument to choose between simulation and real robot -->
+  <arg name="use_sim_time" default="true"/>
+  
+  <include file="$(find moveit_config_package)/launch/move_group.launch" />
+
+  <!-- Start the planning scene updater node -->
+  <node name="configure_robot_env" pkg="robot_environment" type="configure_robot_env.py" output="screen"/>
+
+  <!-- Launch RViz with a predefined configuration -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find robot_environment)/rviz/display.rviz" />
+  
+
+
+</launch>

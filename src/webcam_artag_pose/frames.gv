@@ -1,0 +1,7 @@
+digraph G {
+"parent_link" -> "child_link"[label="Broadcaster: /name_for_static_transform\nAverage rate: 17724.908 Hz\nMost recent transform: 1715759170.968 ( 0.000 sec old)\nBuffer length: 5.000 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1715759170.968"[ shape=plaintext ] ;
+ }->"parent_link";
+}

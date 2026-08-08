@@ -1,0 +1,10 @@
+<launch>
+
+    <node 
+    pkg="tf" 
+    type="static_transform_publisher" 
+    name="base_frame" 
+    output="screen" 
+    args="x y z yaw pitch roll parent_link child_link refresh_rate_hz"/>
+
+</launch>
